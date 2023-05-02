@@ -1,8 +1,7 @@
 # kcg-ml-screening
 
 # Screening Task
-
-![](RackMultipart20230502-1-zr9oll_html_34b6b55306f35b4b.jpg)
+![image_2023-05-02_10-13-48](https://user-images.githubusercontent.com/73473507/235726680-4252f7e8-b276-4795-937c-5ef2dc46d873.png)
 
 Open **text\_to\_image.py**
 
