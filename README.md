@@ -16,7 +16,7 @@
 - Make a function that takes the latent and runs the auto-encoder, to get outputimage
   - ^^ auto-encoder; input is latent, output is image
 
-##### Download Model using bittorrent, using this magnet link:
+#### Download Model using bittorrent, using this magnet link:
 
 - magnet:?xt=urn:btih:H6ABMBQRGKWUUR26WM62YVU7HKEEDCLU&dn=v1-5-
 pruned- emaonly.safetensors&xl=4265146304&tr=udp%3A%2F%2Fexodus.desync.com%3A696 9%2Fannounce
@@ -26,7 +26,7 @@ pruned- emaonly.safetensors&xl=4265146304&tr=udp%3A%2F%2Fexodus.desync.com%3A696
 series
 
 
-# 1. Call each function 128times
+## 1. Call each function 128times
 
   1. Each call is called an"inference"
   2. N is sample size, etcN=128
@@ -51,7 +51,7 @@ Then compare time of:
     3. Time perinference
 
 
-# 2. Linear Interpolation BetweenLatents
+## 2. Linear Interpolation BetweenLatents
 
 1. Use functions above
 2. Generate two latents from textinput
@@ -61,7 +61,7 @@ Then compare time of:
 5. Display the images in a grid
 
 
-# 3.Bonus: SphericalInterpolation
+## 3.Bonus: SphericalInterpolation
 
 1. Make a notebook like above in kaggle
 2. But add section that does spherical interpolation instead oflinear
