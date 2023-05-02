@@ -3,23 +3,23 @@
 # Screening Task
 ![image_2023-05-02_10-13-48](https://user-images.githubusercontent.com/73473507/235726680-4252f7e8-b276-4795-937c-5ef2dc46d873.png)
 
-Open **text\_to\_image.py**
+## Open **text\_to\_image.py**
 
-- [https://github.com/kk-digital/kcg-ml-](https://github.com/kk-digital/kcg-ml-sd1p4/blob/main/stable_diffusion/scripts/text_to_image.py)[sd1p4/blob/main/stable\_diffusion/scripts/text\_to\_image.py](https://github.com/kk-digital/kcg-ml-sd1p4/blob/main/stable_diffusion/scripts/text_to_image.py)
+- https://github.com/kk-digital/kcg-ml-sd1p4/blob/main/stable_diffusion/scripts/text_to_image.py
 
-- Make function that calls the TextEncoder for text prompt and gives embeddingback
+- Make function that calls the TextEncoder for text prompt and gives embeddin gback
   - ^^ Text toembedding
 
 - Make function that takes the encoded embedding, and run the unet/optimizer loop for 20 cycles, returns thelate
-  - ^^ Text Embedding is input; optimizer is run; output islatent
+  - ^^ Text Embedding is input; optimizer is run; output is latent
 
 - Make a function that takes the latent and runs the auto-encoder, to get outputimage
-  - ^^ auto-encoder; input is latent, output isimage
+  - ^^ auto-encoder; input is latent, output is image
 
-Download Model using bittorrent, using this magnet link:
+##### Download Model using bittorrent, using this magnet link:
 
-- magnet:?xt=urn:btih:H6ABMBQRGKWUUR26WM62YVU7HKEEDCLU&dn=v1-5- pruned- emaonly.safetensors&xl=4265146304&tr=udp%3A%2F%2Fexodus.desync.com%3A696 9%2Fannounce
-
+- magnet:?xt=urn:btih:H6ABMBQRGKWUUR26WM62YVU7HKEEDCLU&dn=v1-5-
+pruned- emaonly.safetensors&xl=4265146304&tr=udp%3A%2F%2Fexodus.desync.com%3A696 9%2Fannounce
 - Kevin also has the torrent file (if you cannot download it, ask forit)
 - Time the download time (print time from start to finish, size of file and downloadspeed) For each of those functionsabove
 - Show example of generating image from prompt, by calling the three parts of the loopin
@@ -51,17 +51,17 @@ Then compare time of:
     3. Time perinference
 
 
-# 1. Linear Interpolation BetweenLatents
+# 2. Linear Interpolation BetweenLatents
 
 1. Use functions above
 2. Generate two latents from textinput
 3. Interpolate between the latents in. From 0 to 1 in N interviews, etc, N=2, 0.0, 0.5,1.0. To get a ilst of interpolatedlantents
   1. a = 0.0 + n\*(1/num\_divisions)... For n == 0 to n==num\_divisions
-4. Run the latents through auto-encoder to getimages
-5. Display the images in agrid
+4. Run the latents through auto-encoder to get images
+5. Display the images in a grid
 
 
-# 1.Bonus: SphericalInterpolation
+# 3.Bonus: SphericalInterpolation
 
-1. Make a notebook like above inkaggle
+1. Make a notebook like above in kaggle
 2. But add section that does spherical interpolation instead oflinear
