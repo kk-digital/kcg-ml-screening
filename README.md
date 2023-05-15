@@ -65,3 +65,17 @@ Then compare time of:
 
 1. Make a notebook like above in kaggle
 2. But add section that does spherical interpolation instead oflinear
+
+## Downloading Models
+
+##### v1-5-pruned-emaonly.safetensors
+```
+cd kcg-ml-sd1p4
+!wget -P input/model https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors
+```
+
+##### sd-v1-4.ckpt
+```
+cd kcg-ml-sd1p4
+!wget -P input/model https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/resolve/main/sd-v1-4.ckpt
+```
