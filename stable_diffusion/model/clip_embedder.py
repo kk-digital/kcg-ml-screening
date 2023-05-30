@@ -29,7 +29,7 @@ class CLIPTextEmbedder(nn.Module):
         :param max_length: is the max length of the tokenized prompt
         """
         super().__init__()
-        # Load the tokenizer
+        # Load the tokenizer : downloads come from here
         self.tokenizer = CLIPTokenizer.from_pretrained(version)
         # Load the CLIP transformer
         self.transformer = CLIPTextModel.from_pretrained(version).eval()
