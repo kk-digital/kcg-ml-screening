@@ -1,0 +1,14 @@
+FROM pytorch/pytorch
+
+# Copy
+COPY . /kcg-ml-sd1p4
+WORKDIR /kcg-ml-sd1p4
+
+# local pip cache
+RUN pip3 config set global.index-url http://192.168.3.2:5010/index/
+RUN pip3 config set global.trusted-host 192.168.3.2
+
+RUN pip3 install -r ./requirements.txt
+
+WORKDIR /kcg-ml-sd1p4
+CMD ["python3", "run-all-notebooks.py"]
